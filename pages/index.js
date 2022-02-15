@@ -15,6 +15,20 @@ export default function Home() {
           Enter the future
         </button>
       </div>
+      <div className=" h-screen flex flex-row items-center justify-around mx-24">
+        <div className="w-80">
+          <p className="text-center mb-16 ">Artists</p>
+          <h1 className="text-5xl overflow-hidden text-center">
+            Regain artistic freedom
+          </h1>
+        </div>
+        <div className="w-80">
+          <p className="text-center mb-16">Fans</p>
+          <h1 className="text-5xl overflow-y-hidden text-center ">
+            Own your favorite song
+          </h1>
+        </div>
+      </div>
     </>
   );
 }
