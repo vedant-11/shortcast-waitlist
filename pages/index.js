@@ -9,13 +9,13 @@ export default function Home() {
       <Navbar />
       <div className=" flex flex-col  justify-center items-center w-full h-screen">
         <div className="w-full h-screen  float-left z-0 relative m-1.5 overflow-hidden mt-10  ">
-          <Image src={back} />
+          <Image src={back} layout={"fill"} />
         </div>
         <div className="z-10 absolute bg-transparent justify-center items-center w-full flex flex-col ">
-          <h1 className=" herofont font-bold text-center text-8xl w-1/2 overflow-hidden bg-transparent  ">
+          <h1 className=" herofont font-bold text-center text-8xl w-1/2 overflow-hidden bg-transparent sm:text-5xl sm:w-80 ">
             The future of music is here
           </h1>
-          <p className=" poppins font-normal  my-10 text-xl bg-transparent  ">
+          <p className=" poppins font-normal  my-10 text-xl bg-transparent sm:text-lg sm:text-center  ">
             connecting artists with their fans like never before.
           </p>
           <button className="poppins font-medium rounded bg-[#F8F9FA] text-[#192024] w-40 h-10 hover:bg-[#C9C9C9] ">
@@ -23,7 +23,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className=" h-screen flex flex-row items-center justify-around mx-24">
+      <div className=" h-screen flex flex-row items-center justify-around mx-24 sm:flex-col sm:mx-5 sm:justify-evenly">
         <div className="w-96">
           <p className="text-center mb-16 poppins font-medium text-2xl ">
             Artists
