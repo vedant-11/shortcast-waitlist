@@ -43,7 +43,11 @@ const Navbar = () => {
           <ModalBody pb={6}>
             <FormControl>
               <FormLabel>First name</FormLabel>
-              <Input ref={initialRef} placeholder="Enter your email" />
+              <Input
+                focusBorderColor="gray.400"
+                ref={initialRef}
+                placeholder="Enter your email"
+              />
             </FormControl>
           </ModalBody>
 

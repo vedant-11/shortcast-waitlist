@@ -7,6 +7,7 @@ const Footer = () => {
         <h1 className="text-5xl overflow-y-hidden herofont font-semibold">
           Interested?
         </h1>
+
         <p className="my-8">Join our waitist to be updated</p>
         <form>
           <input

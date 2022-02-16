@@ -1,10 +1,11 @@
 import Navbar from "../components/Navabar";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import back from "../assets/bg.png";
 import HowItWorks from "../components/HowItWorks";
 import Image from "next/image";
 
 import Footer from "../components/Footer";
+import Clock from "../components/Clock";
 
 import {
   Modal,
@@ -20,6 +21,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
+import Timer from "../components/Timer";
 
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -41,12 +43,14 @@ export default function Home() {
           <p className=" poppins font-normal  my-10 text-xl bg-transparent sm:text-lg sm:text-center  ">
             connecting artists with their fans like never before.
           </p>
+          <Timer />
           <button
             onClick={onOpen}
             className="poppins font-medium rounded bg-[#F8F9FA] text-[#192024] w-40 h-10 hover:bg-[#C9C9C9] "
           >
             Enter the future
           </button>
+
           <Modal
             initialFocusRef={initialRef}
             finalFocusRef={finalRef}
@@ -60,7 +64,11 @@ export default function Home() {
               <ModalBody pb={6}>
                 <FormControl>
                   <FormLabel>First name</FormLabel>
-                  <Input ref={initialRef} placeholder="Enter your email" />
+                  <Input
+                    focusBorderColor="gray.400"
+                    ref={initialRef}
+                    placeholder="Enter your email"
+                  />
                 </FormControl>
               </ModalBody>
 

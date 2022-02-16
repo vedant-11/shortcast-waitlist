@@ -3,8 +3,12 @@ import Image from "next/image";
 import one from "../assets/01.png";
 import two from "../assets/02.png";
 import three from "../assets/03.png";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
 
 const HowItWorks = () => {
+  AOS.init();
   return (
     <div className="mx-24 overflow-hidden sm:mx-5 ">
       <h1 className="h-32 overflow-hidden text-5xl herofont font-semibold ">
@@ -26,7 +30,10 @@ const HowItWorks = () => {
           </div>
         </div>
         <div className="sm:mx-5">
-          <div className="flex flex-row items-center sm:flex-col-reverse  ">
+          <div
+            className="flex flex-row items-center sm:flex-col-reverse  "
+            data-aos="fade-left"
+          >
             <div className="w-80 mr-10 sm:mx-5 mt-4 sm:text-center">
               <h1 className=" poppins text-7xl overflow-hidden font-bold text-[#161B22]">
                 01

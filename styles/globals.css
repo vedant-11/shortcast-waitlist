@@ -12,14 +12,16 @@
   margin-top: 0;
 }
 
-.bgimg {
-  background-image: url("/assets/bg.png");
-}
-
 .herofont {
   font-family: "Syne", sans-serif;
 }
 
 .poppins {
   font-family: "Poppins", sans-serif;
+}
+
+.border {
+  background: rgba(255, 254, 254, 0.53);
+  border: 2px solid #5a5a5a;
+  border-radius: 8px;
 }
