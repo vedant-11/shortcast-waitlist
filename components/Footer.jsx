@@ -21,10 +21,10 @@ const Footer = () => {
         </button>
       </div>
       <div className="flex overflow-hidden h-40 bg-[#161B22] justify-between items-center ">
-        <span className="text-3xl font-bold  overflow-hidden bg-[#161B22] mx-24 poppins font-semibold ">
+        <span className="text-3xl font-bold  overflow-hidden bg-[#161B22] mx-24 sm:mx-5 sm:text-3xl poppins font-semibold ">
           Beat
         </span>
-        <span className="bg-[#161B22] mx-24 poppins font-medium ">
+        <span className="bg-[#161B22] mx-24 poppins font-medium sm:mx-5">
           Lorem ipsum dolor amet
         </span>
       </div>

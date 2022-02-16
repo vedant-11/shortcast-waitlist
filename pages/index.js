@@ -7,16 +7,21 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className=" bg-[url('/bg.png')] flex flex-col  justify-center items-center w-full h-screen">
-        <h1 className=" herofont font-bold text-center text-8xl w-1/2 overflow-hidden">
-          The future of music is here
-        </h1>
-        <p className=" poppins font-normal  my-10 text-xl">
-          connecting artists with their fans like never before.
-        </p>
-        <button className="poppins font-medium rounded bg-[#F8F9FA] text-[#192024] w-40 h-10">
-          Enter the future
-        </button>
+      <div className=" flex flex-col  justify-center items-center w-full h-screen">
+        <div className="w-full h-screen  float-left z-0 relative m-1.5 overflow-hidden mt-10  ">
+          <Image src={back} />
+        </div>
+        <div className="z-10 absolute bg-transparent justify-center items-center w-full flex flex-col ">
+          <h1 className=" herofont font-bold text-center text-8xl w-1/2 overflow-hidden bg-transparent  ">
+            The future of music is here
+          </h1>
+          <p className=" poppins font-normal  my-10 text-xl bg-transparent  ">
+            connecting artists with their fans like never before.
+          </p>
+          <button className="poppins font-medium rounded bg-[#F8F9FA] text-[#192024] w-40 h-10 hover:bg-[#C9C9C9] ">
+            Enter the future
+          </button>
+        </div>
       </div>
       <div className=" h-screen flex flex-row items-center justify-around mx-24">
         <div className="w-96">

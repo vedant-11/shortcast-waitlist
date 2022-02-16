@@ -6,7 +6,7 @@ const Navbar = () => {
       <span className="text-3xl font-bold  ml-24 overflow-hidden poppins font-semibold ">
         Beat
       </span>
-      <button className=" poppins font-regular bg-[#F8F9FA] text-[#192024] w-40 h-10 rounded-md mr-24">
+      <button className=" hover:bg-[#C9C9C9] poppins font-regular bg-[#F8F9FA] text-[#192024] w-40 h-10 rounded-md mr-24">
         Join the waitlist
       </button>
     </div>
