@@ -1,14 +1,17 @@
 import React from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import one from "../assets/01.png";
 import two from "../assets/02.png";
 import three from "../assets/03.png";
+import "aos/dist/aos.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
 
 const HowItWorks = () => {
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="mx-24 overflow-hidden sm:mx-5 ">
       <h1 className="h-32 overflow-hidden text-5xl herofont font-semibold ">
@@ -33,6 +36,9 @@ const HowItWorks = () => {
           <div
             className="flex flex-row items-center sm:flex-col-reverse  "
             data-aos="fade-left"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
           >
             <div className="w-80 mr-10 sm:mx-5 mt-4 sm:text-center">
               <h1 className=" poppins text-7xl overflow-hidden font-bold text-[#161B22]">
@@ -49,7 +55,13 @@ const HowItWorks = () => {
             </div>
             <Image src={one} />
           </div>
-          <div className="flex flex-row items-center my-16 sm:flex-col-reverse">
+          <div
+            className="flex flex-row items-center my-16 sm:flex-col-reverse"
+            data-aos="fade-left"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+          >
             <div className="w-80 mr-10 sm:mx-5 mt-4 sm:text-center">
               <h1 className=" font-bold poppins text-7xl overflow-hidden font-bold text-[#161B22] ">
                 02
@@ -65,7 +77,13 @@ const HowItWorks = () => {
             </div>
             <Image src={two} />
           </div>
-          <div className="flex flex-row items-center sm:flex-col-reverse">
+          <div
+            className="flex flex-row items-center sm:flex-col-reverse"
+            data-aos="fade-left"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+          >
             <div className="w-80 mr-10 sm:mx-5 mt-4 sm:text-center">
               <h1 className="text-7xl overflow-hidden poppins font-bold text-[#161B22] ">
                 03

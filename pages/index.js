@@ -5,7 +5,6 @@ import HowItWorks from "../components/HowItWorks";
 import Image from "next/image";
 
 import Footer from "../components/Footer";
-import Clock from "../components/Clock";
 
 import {
   Modal,
