@@ -70,7 +70,7 @@ const HowItWorks = () => {
                 Value for fans
               </h1>
               <p className="w-80 poppins font-regular">
-                Beat redefines what it means to be the earliest supporter of
+                BEAT redefines what it means to be the earliest supporter of
                 your favorite artist by owning a piece of their new release and
                 more additional benefits.
               </p>

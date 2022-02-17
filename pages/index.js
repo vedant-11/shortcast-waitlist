@@ -25,7 +25,7 @@ export default function Home() {
             THE FUTURE OF MUSIC IS HERE
           </h1>
           <p className=" poppins font-normal  my-10 text-xl bg-transparent sm:text-lg sm:text-center  ">
-            connecting artists with their fans like never before.
+            connecting artists with their fans like never before
           </p>
           <Timer />
         </div>
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div className="w-80 mt-16">
           <p className="text-center mb-16 poppins font-medium text-2xl  ">
-            fans
+            Fans
           </p>
           <h1 className=" h-40 font-semibold herofont text-5xl overflow-hidden text-center">
             Own your favorite song
