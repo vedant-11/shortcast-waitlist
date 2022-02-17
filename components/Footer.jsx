@@ -26,7 +26,9 @@ const Footer = () => {
           </button>
         </div>
         <a href="https://short-cast.club">
-          <button className="mb-4 poppins">A part of SHORTCAST</button>
+          <button className="mb-4 poppins overflow-hidden">
+            A part of SHORTCAST
+          </button>
         </a>
       </div>
     </div>
