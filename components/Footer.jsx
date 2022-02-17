@@ -9,16 +9,12 @@ const Footer = () => {
         </h1>
 
         <p className="my-8">Join our waitist to be updated</p>
-        <form>
-          <a href="https://airtable.com/shrTTFlTlO3xnARGN">
-            <button
-              type="submit"
-              className=" font-medium sm:rounded-l sm:mt-8 poppins rounded  w-40 bg-[#F8F9FA] text-[#192024] h-10"
-            >
-              Join the waitlist
-            </button>
-          </a>
-        </form>
+
+        <a href="https://airtable.com/shrTTFlTlO3xnARGN">
+          <button className=" font-medium sm:rounded-l sm:mt-8 poppins rounded  w-40 bg-[#F8F9FA] text-[#192024] h-10">
+            Join the waitlist
+          </button>
+        </a>
       </div>
       <div className="flex flex-col overflow-hidden h-40 bg-[#161B22] justify-between items-center sm:flex-col sm:justify-evenly sm:items-center ">
         <div className=" flex overflow-hidden w-screen h-40 bg-[#161B22] justify-between items-center sm:flex-col sm:justify-evenly sm:items-center">
@@ -29,7 +25,9 @@ const Footer = () => {
             FAQ
           </button>
         </div>
-        <button className="mb-4">A part of SHORTCAST</button>
+        <a href="https://short-cast.club">
+          <button className="mb-4 poppins">A part of SHORTCAST</button>
+        </a>
       </div>
     </div>
   );
