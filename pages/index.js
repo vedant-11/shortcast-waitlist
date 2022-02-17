@@ -3,33 +3,18 @@ import React, { useState, useEffect } from "react";
 import back from "../assets/bg.png";
 import HowItWorks from "../components/HowItWorks";
 import Image from "next/image";
-
+import Head from "next/head";
 import Footer from "../components/Footer";
 
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  FormControl,
-  FormLabel,
-  Input,
-  Button,
-} from "@chakra-ui/react";
-import { useDisclosure } from "@chakra-ui/react";
 import Timer from "../components/Timer";
 
 export default function Home() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const initialRef = React.useRef();
-  const finalRef = React.useRef();
-
   return (
     <>
+      <Head>
+        <title>BEAT waitlist</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <div className=" flex flex-col  justify-center items-center w-full h-screen">
         <div className="w-full h-screen  float-left z-0 relative m-1.5 overflow-hidden mt-10  ">
@@ -43,36 +28,6 @@ export default function Home() {
             connecting artists with their fans like never before.
           </p>
           <Timer />
-          <button
-            onClick={onOpen}
-            className="poppins font-medium rounded bg-[#F8F9FA] text-[#192024] w-40 h-10 hover:bg-[#C9C9C9] "
-          >
-            Enter the future
-          </button>
-
-          <Modal
-            initialFocusRef={initialRef}
-            finalFocusRef={finalRef}
-            isOpen={isOpen}
-            onClose={onClose}
-          >
-            <ModalOverlay />
-            <ModalContent>
-              <ModalHeader>Join the Waitlist!</ModalHeader>
-              <ModalCloseButton />
-              <ModalBody pb={6}>
-                <p>Confirm the waitlist</p>
-              </ModalBody>
-
-              <ModalFooter>
-                <a href="https://form.jotform.com/220465350915453">
-                  <button className=" hover:bg-[#C9C9C9] poppins font-regular bg-[#F8F9FA] text-[#192024] w-40 h-10 rounded-md ">
-                    Join the waitlist
-                  </button>
-                </a>
-              </ModalFooter>
-            </ModalContent>
-          </Modal>
         </div>
       </div>
       <div className=" h-screen flex flex-row items-center justify-around mx-24 sm:flex-col sm:mx-5 sm:justify-evenly">
@@ -84,11 +39,11 @@ export default function Home() {
             Regain artistic freedom
           </h1>
         </div>
-        <div className="w-80">
-          <p className="text-center mb-16 poppins font-medium text-2xl ">
+        <div className="w-80 mt-16">
+          <p className="text-center mb-16 poppins font-medium text-2xl  ">
             fans
           </p>
-          <h1 className=" h-28 font-semibold herofont text-5xl overflow-hidden text-center">
+          <h1 className=" h-40 font-semibold herofont text-5xl overflow-hidden text-center">
             Own your favorite song
           </h1>
         </div>
