@@ -36,8 +36,8 @@ export default function Home() {
           <Image src={back} layout={"fill"} />
         </div>
         <div className="z-10 absolute bg-transparent justify-center items-center w-full flex flex-col ">
-          <h1 className=" herofont font-bold text-center text-8xl w-1/2 overflow-hidden bg-transparent sm:text-5xl sm:w-80 ">
-            The future of music is here
+          <h1 className=" herofont font-bold text-center text-8xl w-3/4 overflow-hidden bg-transparent sm:text-5xl sm:w-80 ">
+            THE FUTURE OF MUSIC IS HERE
           </h1>
           <p className=" poppins font-normal  my-10 text-xl bg-transparent sm:text-lg sm:text-center  ">
             connecting artists with their fans like never before.
@@ -61,20 +61,15 @@ export default function Home() {
               <ModalHeader>Join the Waitlist!</ModalHeader>
               <ModalCloseButton />
               <ModalBody pb={6}>
-                <FormControl>
-                  <FormLabel>First name</FormLabel>
-                  <Input
-                    focusBorderColor="gray.400"
-                    ref={initialRef}
-                    placeholder="Enter your email"
-                  />
-                </FormControl>
+                <p>Confirm the waitlist</p>
               </ModalBody>
 
               <ModalFooter>
-                <button className=" hover:bg-[#C9C9C9] poppins font-regular bg-[#F8F9FA] text-[#192024] w-40 h-10 rounded-md ">
-                  Join the waitlist
-                </button>
+                <a href="https://form.jotform.com/220465350915453">
+                  <button className=" hover:bg-[#C9C9C9] poppins font-regular bg-[#F8F9FA] text-[#192024] w-40 h-10 rounded-md ">
+                    Join the waitlist
+                  </button>
+                </a>
               </ModalFooter>
             </ModalContent>
           </Modal>
